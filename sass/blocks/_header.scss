@@ -117,3 +117,26 @@
     }
     
 }
+@media screen and (max-width:520px){
+    .header{
+        .container{
+            position: relative;
+        }
+        &__nav{
+            display: flex;
+            align-items: center;
+            &-list{
+                display: none;
+            }
+            &-sidebarmenyu{
+                position: absolute;
+                right: 10px;
+                display: block;
+            }
+            &-pic{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
