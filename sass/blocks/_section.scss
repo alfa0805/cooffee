@@ -1,0 +1,114 @@
+.section{
+    padding-top: 30px;
+    .container{
+        background:url(..//../images/Bitmap.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 15px;
+    }
+    &__block{
+        padding: 117px 0 116px 85px;
+        max-width: 578px;
+        height: 600px;
+        &-title{
+            padding-bottom: 32px;
+            font-family: Fraunces;
+            font-size: 72px;
+            font-weight: 860;
+            line-height: 72px;
+            text-align: left;
+            color: $BG;
+        }
+        &-text{
+            padding-bottom: 72px;
+            width: 417px;
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color:$BG;
+            opacity: 80%;
+        }
+        &-btn{
+            font-family: Fraunces;
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 25px;
+            text-align: center;
+            color:$BG;
+            background: $Dark-cyan;
+            padding: 16px 31px;
+            border-radius: 6px;
+            border: none;
+            &:hover{
+                background:$btn-hover;
+                color:$BG;
+            }
+            &:active{
+                background:$btn-akt;
+                color:$Dark-cyan;
+            }
+        }
+    }
+}
+@media screen and (max-width:689px){
+    .section{
+        .container{
+            background:url(..//../images/Bitmap\ \(1\).png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+        }
+        &__block{
+            padding: 104px 0 103px 58px;
+           max-width:579px;
+            height: 600px;
+            &-title{
+                width: 80%;
+                padding-bottom: 26px;
+                font-size:48px;
+                font-weight: 860;
+                line-height: 48px;
+                text-align: left;
+            }
+            &-text{
+                padding-bottom: 40px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px){
+.section{
+    .container{
+        background:url(..//../images/Bitmap\ \(2\).png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+    &__block{
+        padding: 100px 24px;
+        max-width:100%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            width: 100%;
+            padding-bottom: 24px;
+            font-size:40px;
+            font-weight: 800;
+            line-height: 40px;
+            text-align:center;
+        }
+        &-text{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+}
