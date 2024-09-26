@@ -1,15 +1,14 @@
 .section{
-    padding-top: 30px;
+    padding-top: 3vh;
     .container{
         background:url(..//../images/Bitmap.png);
-        background-size: contain;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
-        border-radius: 15px;
+        border-radius: 15px; 
     }
     &__block{
-        padding: 117px 0 116px 85px;
+        padding: 12vh 0 12vh 8.1vh;
         max-width: 578px;
-        height: 600px;
         &-title{
             padding-bottom: 32px;
             font-family: Fraunces;
@@ -52,11 +51,11 @@
         }
     }
 }
-@media screen and (max-width:689px){
+@media screen and (max-width:690px){
     .section{
         .container{
             background:url(..//../images/Bitmap\ \(1\).png);
-            background-size: contain;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
             border-radius: 10px;
         }
@@ -100,9 +99,9 @@
         &-title{
             width: 100%;
             padding-bottom: 24px;
-            font-size:40px;
+            font-size:35px;
             font-weight: 800;
-            line-height: 40px;
+            line-height: 35px;
             text-align:center;
         }
         &-text{

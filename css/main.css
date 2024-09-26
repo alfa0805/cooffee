@@ -141,18 +141,17 @@
   }
 }
 .section {
-  padding-top: 30px;
+  padding-top: 3vh;
 }
 .section .container {
   background: url(..//../images/Bitmap.png);
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 15px;
 }
 .section__block {
-  padding: 117px 0 116px 85px;
+  padding: 12vh 0 12vh 8.1vh;
   max-width: 578px;
-  height: 600px;
 }
 .section__block-title {
   padding-bottom: 32px;
@@ -195,10 +194,10 @@
   color: #0E8784;
 }
 
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 690px) {
   .section .container {
     background: url(..//../images/Bitmap\ \(1\).png);
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 10px;
   }
@@ -240,9 +239,9 @@
   .section__block-title {
     width: 100%;
     padding-bottom: 24px;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
-    line-height: 40px;
+    line-height: 35px;
     text-align: center;
   }
   .section__block-text {
@@ -278,6 +277,10 @@
 .aside__list-item {
   width: 24%;
 }
+.aside__list-box {
+  display: flex;
+  flex-direction: column;
+}
 .aside__list-title {
   padding-top: 74px;
   font-family: Fraunces;
@@ -300,6 +303,59 @@
   width: 100%;
 }
 
+@media screen and (max-width: 920px) {
+  .aside__list {
+    align-items: start;
+  }
+}
+@media screen and (max-width: 690px) {
+  .aside__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aside__list-item {
+    display: flex;
+    width: 85%;
+  }
+  .aside__list-img {
+    width: 256px;
+  }
+  .aside__list-title {
+    text-align: left;
+  }
+  .aside__list-text {
+    text-align: left;
+  }
+  .aside__bacround {
+    top: -50px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .aside__bacround {
+    top: -180px;
+    display: flex;
+    justify-content: center;
+  }
+  .aside__bacround-pic {
+    width: 90%;
+  }
+  .aside__list {
+    align-items: center;
+  }
+  .aside__list-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aside__list-img {
+    width: 256px;
+  }
+  .aside__list-title {
+    text-align: center;
+  }
+  .aside__list-text {
+    text-align: center;
+  }
+}
 .content .container {
   display: flex;
   flex-direction: column;
@@ -357,6 +413,11 @@
 .content__box-image {
   width: 72px;
   height: 50px;
+}
+.content__box-span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .content__box-title {
   padding-top: 56px;
