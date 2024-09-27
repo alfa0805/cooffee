@@ -1,0 +1,189 @@
+.element{
+    padding: 350px 0px 200px 0px;
+    .container{
+        padding-left: 85px;
+    }
+    &__title{
+        width: 56%;
+        padding-bottom: 85px;
+        font-family: Fraunces;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        text-align: left;
+        color:$Grey;
+        border-bottom: 2px solid #FDD6BA;
+    }
+    &__block{
+        position: relative;
+        &-list{
+            width: 80%;
+            display: flex;
+            align-items: start;
+            gap: 30px;
+            position: absolute;
+            top: -15.5px;
+            left: 0;
+            z-index: 1;
+        }
+        &-item{
+            width: 32%;
+        }
+        &-box{
+            width: 31px;
+            height: 31px;
+            border: 2px solid $Dark-cyan;
+            border-radius: 50%;
+            background-color: white;
+        }
+        &-bigtitle{
+            padding-top: 67px;
+            font-family: Fraunces;
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 72px;
+            text-align: left;
+            color:$Pale-orenge;
+        }
+        &-title{
+            width: 80%;
+            padding-top: 38px;
+            font-family: Fraunces;
+            font-size: 32px;
+            font-weight: 900;
+            line-height: 36px;
+            text-align: left;
+            color:$Dark-grey-blue;
+        }
+        &-text{
+            width: 99%;
+            padding-top: 42px;
+            font-family: Barlow;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: left;
+            color:$Dark-grey-blue;
+        }
+    }
+    &__btn{
+        padding-top: 520px;
+        &-button{
+            font-family: Fraunces;
+            font-size: 18px;
+            font-weight: 900;
+            line-height: 25px;
+            text-align: center;
+            color:$BG;
+            background:$Dark-cyan;
+            padding: 15px 31px;
+            border: none;
+            border-radius: 6px;
+            &:hover{
+                background:$btn-hover;
+                color:$BG;
+            }
+            &:active{
+                background:$btn-akt;
+                color:$Dark-cyan;
+            }
+        }
+    }
+}
+@media screen and (max-width:930px) {
+    .element{
+        &__title{
+            width: 66%;
+        }
+        &__block{
+            &-list{
+                width: 90%;
+            }
+        }
+        &__btn{
+            padding-top: 600px;
+        }
+    }
+}
+@media screen and (max-width:780px) {
+    .element{
+        .container{
+            padding-left:40px;
+           }
+        &__title{
+            width: 70%;
+        }
+        &__block{
+            &-list{
+                width: 100%;
+            }
+        }
+        &__btn{
+            padding-top: 500px;
+        }
+    }
+}
+@media screen and (max-width:690px){
+    .element{
+       .container{
+        padding-left:20px;
+       }
+       &__block{
+        &-title{
+            padding-top: 42px;
+            font-size:28px;
+            line-height:32px;
+        }
+        &-text{
+            padding-top: 38px;
+            font-size:14px;
+            line-height:24px;
+        }
+       }
+    }
+}
+@media screen and (max-width:590px){
+    .element{
+        &__block{
+            &-list{
+                flex-direction:column;
+            }
+            &-item{
+                width: 100%;
+            }
+            &-box{
+                display:none;
+            }
+        }
+        &__btn{
+            padding-top: 1080px;
+        }
+    }
+}
+@media screen and (max-width:402px){
+    .element{
+        padding-top: 700px;
+        &__title{
+            width: 100%;
+            text-align:center;
+            border-bottom: none;
+        }
+        &__block{
+            &-item{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+            }
+            &-title{
+                text-align:center;
+            }
+            &-text{
+                text-align:center;
+            }
+        }
+        &__btn{
+            display: flex;
+            justify-content:center;
+        }
+    }
+}

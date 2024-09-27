@@ -7,7 +7,7 @@
         border-radius: 15px; 
     }
     &__block{
-        padding: 12vh 0 12vh 8.1vh;
+        padding: 104px 85px;
         max-width: 578px;
         &-title{
             padding-bottom: 32px;
@@ -38,7 +38,7 @@
             color:$BG;
             background: $Dark-cyan;
             padding: 16px 31px;
-            border-radius: 6px;
+            border-radius: 6px; 
             border: none;
             &:hover{
                 background:$btn-hover;
@@ -60,7 +60,7 @@
             border-radius: 10px;
         }
         &__block{
-            padding: 104px 0 103px 58px;
+            padding: 104px 0 103px 57px;
            max-width:579px;
             height: 600px;
             &-title{
@@ -80,7 +80,19 @@
         }
     }
 }
-
+@media screen and (max-width:490px) {
+    .section{
+        &__block{
+            &-title{
+                font-size: 44px;
+            }
+            &-text{
+                width: 100%;
+            }
+        }
+    }
+    
+}
 @media screen and (max-width:400px){
 .section{
     .container{

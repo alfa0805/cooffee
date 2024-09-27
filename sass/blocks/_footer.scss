@@ -1,0 +1,107 @@
+
+.footer{
+    padding: 47px 20px;
+    background-color:$Dark-grey-blue;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__logo-link{
+        width: 22%;
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        &-img{
+            width: 24px;
+            height: 24px;
+        }
+        &-title{
+            padding-left: 10px;
+            font-family: Fraunces;
+            font-size: 30px;
+            font-weight: 900;
+            text-align: left;
+            color:$BG;
+            &:hover{
+                color:$Dark-cyan;
+                transition: all 0.3s;
+                transform: scale(101%);
+            }
+        }
+    }
+    &__nav{
+        &-list{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        &-link{
+            font-family: Barlow;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 0.9230769276618958px;
+            text-align: left;
+            color:$Grey;
+            &:hover{
+                color:$BG;
+                transition: all 0.3s;
+            }
+        }
+    }
+    &__box{
+        width: 10%;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        &-icons{
+            width: 24px;
+            height: 24px;
+        }
+        &-icon{
+            width: 24px;
+            height: 19.5px;
+        }
+    }
+}
+@media screen and (max-width:920px){
+    .footer{
+        padding: 47px 0px;
+        &__box{
+            width: 13%;
+        }
+        // &__nav{
+        //     &_list{
+        //     }
+        // }
+    }
+}
+@media screen and (max-width:690px){
+    .footer{
+        .container{
+            flex-direction: column;
+        }
+        &__nav{
+            padding: 32px 0 65px 0;
+            
+        }
+        &__box{
+            width: 23%;
+        }
+    }
+}
+@media screen and (max-width:400px){
+    .footer{
+        &__nav{
+            &-list{
+                flex-direction:column;
+                align-items:center;
+            }
+        }
+        &__box{
+            width: 40%;
+        }
+    }
+}
