@@ -150,7 +150,7 @@
   border-radius: 15px;
 }
 .section__block {
-  padding: 104px 85px;
+  padding: 104px 0 103px 85px;
   max-width: 578px;
 }
 .section__block-title {
@@ -709,7 +709,7 @@
     display: none;
   }
   .element__btn {
-    padding-top: 1080px;
+    padding-top: 1120px;
   }
 }
 @media screen and (max-width: 402px) {
@@ -733,6 +733,7 @@
     text-align: center;
   }
   .element__btn {
+    padding-top: 1200px;
     display: flex;
     justify-content: center;
   }
